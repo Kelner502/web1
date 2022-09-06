@@ -1,0 +1,293 @@
+/* ESTILO DEVIDEODEFONDO DELOGIN */
+video{
+position: fixed;
+min-width: 100%;
+min-height: 100%;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+/* ETIQUETAPARA RESATAR OPONER UNTEXTODEVAJO DE UNA IMAGEN */
+z-index: -1;
+
+}
+/* ESTILOS DE 1 IMAGEN DE LOGIN */
+.transp{
+    margin: 50px;
+    position:absolute;
+    width:500px;
+    height:450px;
+    z-index:4;
+}
+/* ESTILOS DE 2 IMAGEN DE LOGIN */
+.transpp{
+    margin: 50px;
+    position:absolute;
+    width:500px;
+    height:450px;
+    z-index:4;
+    right: 0%;
+
+ 
+}
+
+
+/* ESTILO DE MI BODY DE MI LOGIN */
+body {
+    margin: 0;
+    padding: 0;
+/*
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+*/
+}
+/* ESTILO DE MI FORMULARIO  */
+.loginbox {
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.48);
+    color: rgb(255, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 80px 20px;
+    
+    box-shadow: 5px 5px 5px 5px rgba(255, 0, 0, 0.9);
+}
+
+/* ESTILO DE MI LOGOTIPO  */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: calc(50% - 50px);
+        
+    
+    box-shadow: 0px 0px 15px 15px rgba(255, 0, 0, 0.9);
+}
+/* ESTILO DE LA LETRA DE LOGIN */
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 60px;
+}
+/* ESTILO DE MARGEN DE MI CONTENIDO DE LOGIN USER,PASWORD */
+p{
+    font-size: 20px;
+}   
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+   
+}
+.loginbox input {
+    width: 100%;
+    margin-bottom:25px;
+}
+/* ESTILO DE CAMPO DE REGISTRO DE MI LOGIN CONTRASEÑA */
+
+.loginbox input[type = "text"], input[type = "password"] {
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    outline: none;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    
+   
+}
+.loginbox input[type = "text"]:hover, input[type = "password"]:hover{
+
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.9);
+}
+
+/* ESTILOS DEL BOTON DE INICIO */
+
+.loginbox input[type = "button"] {
+    border: none;
+    outline: none;
+    height: 50px;
+    
+    left: 50px;
+    background: #4f4d4d;
+    color: rgb(255, 255, 255);
+    /* TAMAÑO DE LETRA DE MI BOTON */
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.loginbox input[type = "sbutton"]:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+
+
+.loginbox input[type = "button"]:hover{
+
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 9);
+}
+
+
+
+
+/* MODO RESPONCIVO PARA MOVIL */
+
+@media screen and (min-width: 800px) {
+    /* ESTILO DEVIDEODEFONDO DELOGIN */
+    
+    
+    .movil  {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 800px) {
+/* ESTILO DEVIDEODEFONDO DELOGIN */
+
+body{
+    background-color: black;
+    width: 100%;
+}
+.movil  {
+    width: 100%;
+
+    height: calc(100%  10vh);
+    object-fit: cover;
+
+    height: 100vh;
+    padding: 0% 0%;
+    box-sizing: border-box;
+   
+   
+}
+/* ESTILO DEVIDEODEFONDO DELOGIN */
+video{
+    visibility: hidden;
+    }
+    /* ESTILOS DE 1 IMAGEN DE LOGIN */
+    .transp{
+        /* ETIQUETA PAARA OCULTAR ELEMENTOS */
+        visibility: hidden;
+    }
+    /* ESTILOS DE 2 IMAGEN DE LOGIN */
+    .transpp{
+        visibility: hidden;
+    
+     
+    }
+    
+    
+    /* ESTILO DE MI BODY DE MI LOGIN */
+    .loginbox  body {
+        margin: 0;
+        padding: 0;
+    
+        height: 50vh;
+        padding: 0% 0%;
+        box-sizing: border-box;
+    }
+    /* ESTILO DE MI FORMULARIO  */
+    .loginbox {
+        /* TAMAÑODEMI FORMULARIO */
+        width: 300px;
+        height: 420px;
+        background: rgba(0, 0, 0, 0.48);
+        color: rgb(255, 0, 0);
+        top: 70%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 80px 20px;
+        
+        box-shadow: 5px 5px 5px 5px rgba(255, 0, 0, 0.9);
+    }
+    
+    /* ESTILO DE MI LOGOTIPO  */
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -10%;
+        left: calc(50% - 50px);
+            
+        
+        box-shadow: 0px 0px 15px 15px rgba(255, 0, 0, 0.9);
+    }
+    /* ESTILO DE LA LETRA DE LOGIN */
+    h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 60px;
+    }
+    /* ESTILO DE MARGEN DE MI CONTENIDO DE LOGIN USER,PASWORD */
+    p{
+        font-size: 20px;
+    }   
+    .loginbox p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+       
+    }
+    .loginbox input {
+        width: 100%;
+        margin-bottom:25px;
+    }
+    /* ESTILO DE CAMPO DE REGISTRO DE MI LOGIN CONTRASEÑA */
+    
+    .loginbox input[type = "text"], input[type = "password"] {
+        border: none;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        background: transparent;
+        outline: none;
+        height: 50px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        
+       
+    }
+    .loginbox input[type = "text"]:hover, input[type = "password"]:hover{
+    
+        box-shadow: 0 2px 3px rgba(255, 255, 255, 0.9);
+    }
+    
+    /* ESTILOS DEL BOTON DE INICIO */
+    
+    .loginbox input[type = "button"] {
+        border: none;
+        outline: none;
+        height: 50px;
+        
+        left: 50px;
+        background: #4f4d4d;
+        color: rgb(255, 255, 255);
+        /* TAMAÑO DE LETRA DE MI BOTON */
+        font-size: 20px;
+        border-radius: 30px;
+    }
+    
+    .loginbox input[type = "sbutton"]:hover {
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+    }
+    
+    
+    .loginbox input[type = "button"]:hover{
+    
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 9);
+    }
+    
+
+ }

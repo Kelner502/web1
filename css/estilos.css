@@ -1,0 +1,984 @@
+#featured {
+	background: url() right top no-repeat,
+							url(../gif/2.jpg) left top  no-repeat  ;
+	background-size: 150px, 700px;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding: 0px;
+	width: 760px;
+	border: rgb(16, 3, 3) 3px solid;
+}
+
+/* LEDARE UNA UN COLOR AL CUERPO DE MI PAJINA CON EFECTO DEGRADADO*/
+body{
+/*	background: rgb(34,193,195);*/
+	background: linear-gradient(135deg, rgb(0, 0, 0) 30%, rgb(255, 0, 0) 100%);
+  }
+
+  a{
+  text-decoration: none;
+  }
+
+/* VARIABLE PARA CAMBIAR EL COLOR ATODO LOS BOTONES DE LA PAGINA */
+:root {
+	--rojo: #f80d0d;
+	--fondo: #141414;
+}
+/* COLOCO MI LOGOTIPO  EN FORMA REDODNDO */
+.imagen{
+	/* ANCHO DEL BORDE DE MI LOGOTIPO */
+    width: 30%;
+	/*ATURA DE BORDE DE MI LOGOTIPO  */
+    height: 30%;
+    border-radius: 100%;
+
+}
+
+/* DECORACIONDE MI LOGOTIPO DE MI PAGINA */
+.imagen img{
+    width: 180px;
+	width: 30%;
+    height: 30%;
+    border-radius: 100%;
+
+
+
+}
+/*MARGEN GENERAL DEL BODY */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+*/
+/* MARGEN DE MI CONTENEDOR DE MIS IMAGENES  DE LAS PELICULAS PRINCIPALES */
+.contenedor {
+	width: 95%;
+	margin: auto;
+}
+/* MARGEN DE LA PARTE INICIAL DEL BODY */
+header {
+	padding: 20px 0;
+}
+/* ESTILO DEL CONTENEDOR DEL DIV CON UN SELECTOR DE TIPO CLASS */
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*  INSETE EL NOMBRE DE MI PAJINA Y LOGOTIPO  ////////////////////////////////////////////////////////////////*/
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	/* font-weight: normal; */
+	color: rgb(251, 251, 251);
+	font-size: 90px; /* TAMAÑO DE LETRA DE GT-MOVIES-502*/
+}
+h2 {
+
+	font-size: 100px; /* TAMAÑO DE LETRA DEL MENU*/
+/* Arriba | Horizontal | Abajo */
+margin: 3em auto 0em;
+
+}
+ /* CODIGO PARA MARGEN DE MENUS DE LAS PELICULAS  ---------------------------------------------------*/
+
+header nav a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	margin-right: 15px;
+	font-size: 12px;
+
+}
+/* EFECTO OVER EN EL MENU DE INICIO,PELICULAS, RECIENTES, MAS VISTAS */
+
+header nav a:hover,
+header nav a.activo {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 2em;
+	padding: 0.1em 0.1em; /* el tamaño del color del baccground*/
+	color: #fff;
+	margin-right: 0.5em; /* efecto de asecamiento*/
+	cursor: pointer;
+	transition: .4s ease all;
+	font-size: 1em; /* efecto de asecamiento*/
+
+}
+/* BORDE DE TIPO SOLIDO DEL MENU DE INICIO,PELICULAS, RECIENTES, MAS VISTAS  */
+#fondo{
+	width: 450px;
+	height: 100px;
+	border: 6px solid rgb(0, 0, 0);
+
+
+/* EFECTO DE SOMBRA DE FONDO PARA EL MENU DE LAS PELICULAS */
+	box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 20);  /* efecto sombra de borde */
+	background: radial-gradient(rgba(255, 243, 243, 0.664),rgb(255, 7, 7));
+
+
+}
+
+/* IMAJEN DE FONDO DEL LAS PELICULAS PRINCIPALES */
+.pelicula-principal {
+
+	font-size: 10px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 90%), url(.../img/8.jpg.);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+
+
+
+}
+
+/* AJUSTAR EL FORMATO DE DE LOS VIDEOS  */
+video{
+    width: 50%; /*se adapta la venta del navegador* */
+    max-width: 100%; /*  maximo que se puede maximizar */
+
+
+
+}
+/* TAMAÑO DE FUMINACION DE FONDO DE LAS PELICULAS PRINCIPALES EFECTO DE TIPO SOMBRA */
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+/* ESTILO DE DE TITULO DE LAS PELICULAS PRINCIPALES */
+.pelicula-principal .titulo {
+	font-weight: 600;
+	 font-size: 8.12em;   /*TAMAÑO DE LETRA INTERESTELLA  */
+	 margin-bottom: 0.4em; /*MARGEN DE LOS BOTONES DE LAS PELICULAS PRINCIPALES*/
+
+}
+/* ANIMACION DE TITULO DE LAS PELICULASA PRINCIPALES */
+ .titulo {
+	animation: fluido 10s ease-in-out infinite;
+	background: linear-gradient(-45deg, #ffffff, #cfcfcf, #ff0101, #ff0000);/* DEFINO CON LA PROPIEDAD BACKGROUND EL COLOR DEGRADADO PARA LAS LETRAS*/
+	background-size: 300%;                                   /* TAMAÑO DE FONDO */
+	-webkit-background-clip: text;
+			background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 7.12em;   /*TAMAÑO DE LETRA INTERESTELLA  */
+  }
+
+  @keyframes fluido {
+	  0% { background-position: 0 50% }
+	  50% { background-position: 300% 50% }
+	  100% { background-position: 0 50% }
+  }
+
+  span{
+	animation: fluido 10s ease-in-out infinite;
+	background: linear-gradient(-45deg, #e5ff00, #00ff2a, #ff0101, #1e00ff);/* DEFINO CON LA PROPIEDAD BACKGROUND EL COLOR DEGRADADO PARA LAS LETRAS*/
+	background-size: 300%;                                   /* TAMAÑO DE FONDO */
+	-webkit-background-clip: text;
+			background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+
+  }
+
+  /* ANIMACION DE TITULO DE LOGO TIPO  MOVIES GUATE */
+
+  h2 {
+	animation: fluido 20s ease-in-out infinite;
+	background: linear-gradient(-45deg, #ffffff, #0922ff, #ffffff, #00ffea);/* DEFINO CON LA PROPIEDAD BACKGROUND EL COLOR DEGRADADO PARA LAS LETRAS*/
+	background-size: 300%;                                   /* TAMAÑO DE FONDO */
+	-webkit-background-clip: text;
+			background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 7.12em;   /*TAMAÑO DE LETRA DE MOVIES-GUATE */
+  }
+
+  @keyframes fluido {
+	  0% { background-position: 0 50% }
+	  50% { background-position: 100% 50% }
+	  100% { background-position: 0 50% }
+  }
+
+
+/* ESTILO PARA DESCRIPCION DE LAS PELICULAS MAS VISTAS 2022 Y MARGENES*/
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	/* TAMAÑO DE LETRA  */
+	font-size: 3em;
+	/* TAMAÑO DE MARGEN */
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+/* ESTILO DE LOS BOTONES DE LAS PELICULAS MAS VISTAS 2022 */
+.pelicula-principal .boton {
+	background: rgba(255, 255, 255, 0.525);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: rgb(255, 255, 255);
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+/* EFECTO  OVER DE LOS BOTONES DELAS PELICULICULAS MAS VISTAS 2022 */
+.pelicula-principal .boton:hover {
+	background: rgb(255, 0, 0);
+	color: rgb(0, 0, 0);
+}
+
+
+/* MARGEN DEL TEXTO QUE ESTA DENTRO DE LOS BOTONES DE LAS PELICULAS MAS VISTAS 2022 */
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+/* ESTILO DEL DE LETRAS  DE PELICULAS RECOMENDADAS  */
+.contenedor-titulo-controles h1 {
+	color: rgb(255, 255, 255);
+	font-size: 60px;
+
+	font-family: sans-serif;
+	font-size: 300%;
+	font-style: italic;
+}
+/* ESTILO DE VIÑETA DE PELICULAS RECOMENDADAS */
+.contenedor-titulo-controles .indicadores button {
+	background: rgb(8, 8, 8);
+	/* ALTURA DEL INDICADOR */
+	height: 20px;
+	/* ANCHO DEL INDICADOR */
+	width: 20px;
+	cursor: pointer;
+	border: none;
+	/* TAMAÑO DE ESPACIO DE INDICADORES */
+	margin-right: 10px;
+}
+/* ESTILO DEL COLOR DE BOTON DEL INDICADOR DE LAS PELICULAS RECOMENDADAS*/
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: rgb(255, 0, 0);
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+/* MARGEN DE BOTON DE LAS PELICULAS RECOMENDADAS */
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+/* ESTILO DE BOTON DE LAS PELICULAS MAS RECOMENDADAS DE IZQUIERDA HACIA  DERECHA */
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.5);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+/* ESTILO DEL EFECTO OVER DE LOS BOTONES DE DERECHA Y IZQUIERDA */
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(255, 255, 255, 0.9);
+}
+/* ESTILO DE MARGEN DE LA FLECHA DE IQUIERDA */
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+/* ESTILO DE MARGEN DE LA FLECHA DE DERECHA */
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+/* ESTILO DE MARGEN DE LAS PELICULAS MAS RECOMENDADAS */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 25px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+/* ESTILO DE TAMAÑO DE LAS PELICULAS MAS RECOMENDADAS */
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	/* TAMAÑO DE PELICULA RECOMENDADA */
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+/* EFECTON DE ASERCAMIENTO DE LAS PELICULAS MAS RECOMENDADAS */
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+/* ESTILO DE TAMÑO DE VIDEO  DE LAS PELICULAS */
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img , video {
+	width: 100%;
+	vertical-align: top;
+}
+
+/* CARTELERA DE TRILERES 2022 */
+
+/* ESTILO DE ESPACIO ENTRA CAJAS DE LAS PELICULAS MAS VISTAS  */
+.boxxP{
+
+    flex: 4;
+    overflow: hidden;
+    margin: 8px;
+
+	/* EFECTO SOMBREADO DE LAS CARTELERAS PRINCIPALES CON REFLECTOR CON LA PROPIEDAD BOX SHADOW  */
+
+    box-shadow: 0 20px 30px rgb(255, 0, 0);
+	
+    line-height: 0;
+    transition: all 600ms;
+}
+/* AJUSTAR IMAJEN ALA CAJA AL MOMENTO DE VERLA  ( WIDTCH:120%; ) */
+.boxxP > img {
+    width: 120%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+
+/* ESTILO DE TAMAÑO DE LETRA DE VER PELICULA CON LA ETIQUETA SPAN */
+.boxxP > span{
+    font-size: 40px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+/* TAMAÑO DEL EFECTO OVER AL SELECCIONAR UNA PELICULA */
+.boxxP:hover{
+    flex: 40%;
+}
+/* TAMAÑO DEL EFECTO OVER  DE IMAJEN  AL SELECCIONAR UNA PELICULA*/
+.boxxP:hover > img{
+	/* ESTILO PARA OCUPAR CON LA IMAGEN TODO EL FONDO DE LA CAJITA */
+    width: 100%;
+    height: 100%;
+}
+/* AJUSTAR VIDEO A LA CAJA  */
+.boxx video{
+	width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+
+
+
+
+
+
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+/*  */
+/* CODIGO PARA ADAPTARCE A DISPOCITIVOS MOVILES Y PARA PC*/
+/* TIPO RESPONCIVO */
+/*
+@media screen and (max-width: 800px) {
+
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 90px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 10px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+
+	}
+}
+.titulo{
+ font-size: 200px;
+
+}
+
+.hijo {
+	width: 400px;
+	height: 400px;
+
+ }
+*/
+
+
+/* TIPO RESPONCIVO */
+
+@media screen and (max-width: 700px) {
+
+	#featured {
+		background: url() right top no-repeat,
+								url(../gif/2.jpg) left top  no-repeat  ;
+		background-size: 150px, 800px;
+		margin-bottom: 1em;
+		overflow: hidden;
+		padding: 0px;
+		width: 760px;
+	
+		
+	}
+	 /* CODIGO PARA MARGEN DE MENUS DE LAS PELICULAS  ---------------------------------------------------*/
+
+header nav a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	margin-right: 15px;
+	font-size: 12px;
+
+}
+/* EFECTO OVER EN EL MENU DE INICIO,PELICULAS, RECIENTES, MAS VISTAS */
+
+header nav a:hover,
+header nav a.activo {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 2em;
+	padding: 0.1em 0.1em; /* el tamaño del color del baccground*/
+	color: #fff;
+	margin-right: 0.5em; /* efecto de asecamiento*/
+	cursor: pointer;
+	transition: .4s ease all;
+	font-size: 1em; /* efecto de asecamiento*/
+
+}
+/* BORDE DE TIPO SOLIDO DEL MENU DE INICIO,PELICULAS, RECIENTES, MAS VISTAS  */
+#fondo{
+	width: 360px;
+	height: 100px;
+	border: 6px solid rgb(255, 255, 255);
+	border-radius: 180PX;
+
+
+/* EFECTO DE SOMBRA DE FONDO PARA EL MENU DE LAS PELICULAS */
+	box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 20);  /* efecto sombra de borde */
+	background: radial-gradient(rgba(255, 255, 243, 0.664),rgb(255, 7, 7));
+	
+
+}
+	
+
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 50px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	
+
+	}
+
+	/* ESTILO DE DE TITULO DE LAS PELICULAS PRINCIPALES */
+.pelicula-principal .titulo {
+	font-weight: 600;
+	 font-size: 3.12em;   /*TAMAÑO DE LETRA INTERESTELLA  */
+	 margin-bottom: 0.4em; /*MARGEN DE LOS BOTONES DE LAS PELICULAS PRINCIPALES*/
+
+}
+/* ANIMACION DE TITULO DE LAS PELICULASA PRINCIPALES */
+.titulo {
+	animation: fluido 10s ease-in-out infinite;
+	background: linear-gradient(-45deg, #ffffff, #cfcfcf, #ff0101, #ff0000);/* DEFINO CON LA PROPIEDAD BACKGROUND EL COLOR DEGRADADO PARA LAS LETRAS*/
+	background-size: 300%;                                   /* TAMAÑO DE FONDO */
+	-webkit-background-clip: text;
+			background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 7.12em;   /*TAMAÑO DE LETRA INTERESTELLA  */
+  }
+
+  @keyframes fluido {
+	  0% { background-position: 0 50% }
+	  50% { background-position: 300% 50% }
+	  100% { background-position: 0 50% }
+  }
+
+
+  /*ESTILO RESPONCIVO PARA MOVIL */
+.boxx:hover{
+
+    flex: 100%;
+}
+
+
+
+}
+
+
+/*////////////////////////////ESTILO DE IMAGENES DE LAS PELICULAS MAS VISTAS///////////////////////////////////////////////////////*/
+.portada{
+
+    display: flex;
+	/* TAMAÑO DE CAJAS DE LAS PELICULAS PELICULA LAS PELICULAS MAS VISTAS*/
+    width: 100%;
+	/* ATURA DE  LAS PELICULAS MAS VISTAS  */
+    height: 90vh;
+    padding: 4% 2%;
+    box-sizing: border-box;
+
+}
+/* ESTILO DE ESPACIO ENTRA CAJAS DE LAS PELICULAS MAS VISTAS  */
+.boxx{
+
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+
+	/* EFECTO SOMBREADO DE LAS CARTELERAS PRINCIPALES CON REFLECTOR CON LA PROPIEDAD BOX SHADOW  */
+
+    box-shadow: 0 20px 30px rgb(255, 0, 0);
+	
+    line-height: 0;
+    transition: all 600ms;
+}
+/* AJUSTAR IMAJEN ALA CAJA AL MOMENTO DE VERLA  ( WIDTCH:120%; ) */
+.boxx > img {
+    width: 120%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+/* AJUSTAR VIDEO A LA CAJA  */
+.boxx video{
+	width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+/* ESTILO DE TAMAÑO DE LETRA DE VER PELICULA CON LA ETIQUETA SPAN */
+.boxx > span{
+    font-size: 40px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+/* TAMAÑO DEL EFECTO OVER AL SELECCIONAR UNA PELICULA */
+.boxx:hover{
+    flex: 40%;
+}
+/* TAMAÑO DEL EFECTO OVER  DE IMAJEN  AL SELECCIONAR UNA PELICULA*/
+.boxx:hover > img{
+	/* ESTILO PARA OCUPAR CON LA IMAGEN TODO EL FONDO DE LA CAJITA */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*//////////////////////////// ESTILLO DE IMAGENES DE LISTAS DE PELICULAS FINALES ////////////////////////////////////////////////////////*/
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    padding: 0% 0%;
+    box-sizing: border-box;
+
+}
+
+.box{
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: 0 30px 40px rgb(238, 255, 0);
+    line-height: 0;
+    transition: all 600ms;
+}
+
+.box > img{
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+
+.box > span{
+    font-size: 35px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+.box:hover{
+    flex: 50%;
+}
+
+.box:hover > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* TIPO RESPONCIVO */
+
+@media screen and (max-width: 700px) {
+
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 60px;
+	}
+
+
+	
+/* DECORACIONDE MI LOGOTIPO DE MI PAGINA */
+.imagen img{
+ 
+	width: 130%;
+    height: 90%;
+    border-radius: 100%;
+	margin: 0em;
+
+
+}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	
+
+	}
+.imagen{
+	font-size: 100px;
+}
+#fondo {
+	background-color: #3c00ff;
+
+}
+
+
+/*////////////////////////////ESTILO DE IMAGENES DE LAS PELICULAS MAS VISTAS///////////////////////////////////////////////////////*/
+.portada{
+
+    display: flex;
+	/* TAMAÑO DE CAJAS DE LAS PELICULAS PELICULA LAS PELICULAS MAS VISTAS*/
+    width: 100%;
+	/* ATURA DE  LAS PELICULAS MAS VISTAS  */
+    height: 40vh;
+    padding: 4% 2%;
+    box-sizing: border-box;
+
+}
+/* ESTILO DE ESPACIO ENTRA CAJAS DE LAS PELICULAS MAS VISTAS  */
+.boxx{
+
+    flex: 1;
+    overflow: hidden;
+    margin: 4px;
+
+	/* EFECTO SOMBREADO DE LAS CARTELERAS PRINCIPALES CON REFLECTOR CON LA PROPIEDAD BOX SHADOW  */
+
+    box-shadow: 0 20px 30px rgb(255, 0, 0);
+	
+    line-height: 0;
+    transition: all 600ms;
+}
+/* AJUSTAR IMAJEN ALA CAJA AL MOMENTO DE VERLA  ( WIDTCH:120%; ) */
+.boxx > img {
+    width: 100%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+/* AJUSTAR VIDEO A LA CAJA  */
+.boxx video{
+	width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+/* ESTILO DE TAMAÑO DE LETRA DE VER PELICULA CON LA ETIQUETA SPAN */
+.boxx > span{
+    font-size: 10px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+/* TAMAÑO DEL EFECTO OVER AL SELECCIONAR UNA PELICULA */
+.boxx:hover{
+    flex: 100%;
+}
+/* TAMAÑO DEL EFECTO OVER  DE IMAJEN  AL SELECCIONAR UNA PELICULA*/
+.boxx:hover > img{
+	/* ESTILO PARA OCUPAR CON LA IMAGEN TODO EL FONDO DE LA CAJITA */
+    width: 100%;
+    height: 100%;
+}
+
+/* comentarios */
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	/* TAMAÑO DE LETRA  */
+	font-size: 1em;
+	/* TAMAÑO DE MARGEN */
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.contenedor-titulo-controles h1 {
+	color: rgb(255, 255, 255);
+	font-size: 60px;
+
+	font-family: sans-serif;
+	font-size: 200%;
+	font-style: italic;
+}
+
+
+/* ESTILO DE VIÑETA DE PELICULAS RECOMENDADAS */
+.contenedor-titulo-controles .indicadores button {
+	background: rgb(49, 29, 29);
+	/* ALTURA DEL INDICADOR */
+	height: 10px;
+	/* ANCHO DEL INDICADOR */
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	/* TAMAÑO DE ESPACIO DE INDICADORES */
+	margin-right: 5px;
+}
+/* ESTILO DEL COLOR DE BOTON DEL INDICADOR DE LAS PELICULAS RECOMENDADAS*/
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: rgb(255, 255, 255);
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+/* MARGEN DE BOTON DE LAS PELICULAS RECOMENDADAS */
+.peliculas-recomendadas {
+	margin-bottom: 30px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+/* ESTILO DE BOTON DE LAS PELICULAS MAS RECOMENDADAS DE IZQUIERDA HACIA  DERECHA */
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.5);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+/* ESTILO DEL EFECTO OVER DE LOS BOTONES DE DERECHA Y IZQUIERDA */
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(255, 255, 255, 0.9);
+}
+/* ESTILO DE MARGEN DE LA FLECHA DE IQUIERDA */
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+/* ESTILO DE MARGEN DE LA FLECHA DE DERECHA */
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+/* ESTILO DE MARGEN DE LAS PELICULAS MAS RECOMENDADAS */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 25px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+/* ESTILO DE TAMAÑO DE LAS PELICULAS MAS RECOMENDADAS */
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	/* TAMAÑO DE PELICULA RECOMENDADA */
+	min-width: 50%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+/* EFECTON DE ASERCAMIENTO DE LAS PELICULAS MAS RECOMENDADAS */
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+/* ESTILO DE TAMÑO DE VIDEO  DE LAS PELICULAS */
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img , video {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+/* PARTE FINAL DE LA PAGINA */
+
+/*//////////////////////////// ESTILLO DE IMAGENES DE LISTAS DE PELICULAS FINALES ////////////////////////////////////////////////////////*/
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    padding: 0% 0%;
+    box-sizing: border-box;
+
+}
+
+.box{
+    flex: 1;
+    overflow: hidden;
+    margin: 5px;
+    box-shadow: 0 20px 30px rgb(188, 255, 5);
+    line-height: 0;
+    transition: all 600ms;
+}
+
+.box > img{
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+
+.box > span{
+    font-size: 60px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 1.6;
+}
+
+.box:hover{
+    flex: 100%;
+}
+
+.box:hover > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* CARTELERA DE TRILERES 2022 */
+
+/* ESTILO DE ESPACIO ENTRA CAJAS DE LAS PELICULAS MAS VISTAS  */
+.boxxP{
+
+    flex: 1;
+    overflow: hidden;
+    margin: 4px;
+
+	/* EFECTO SOMBREADO DE LAS CARTELERAS PRINCIPALES CON REFLECTOR CON LA PROPIEDAD BOX SHADOW  */
+
+    box-shadow: 0 20px 30px rgb(255, 0, 0);
+	
+    line-height: 0;
+    transition: all 600ms;
+}
+/* AJUSTAR IMAJEN ALA CAJA AL MOMENTO DE VERLA  ( WIDTCH:120%; ) */
+.boxxP > img {
+    width: 100%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+/* AJUSTAR VIDEO A LA CAJA  */
+.boxxP video{
+	width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+/* ESTILO DE TAMAÑO DE LETRA DE VER PELICULA CON LA ETIQUETA SPAN */
+.boxxP > span{
+    font-size: 10px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+/* TAMAÑO DEL EFECTO OVER AL SELECCIONAR UNA PELICULA */
+.boxxP:hover{
+    flex: 100%;
+}
+
+
+}
